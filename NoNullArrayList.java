@@ -9,8 +9,9 @@ public class NoNullArrayList<T> extends ArrayList<T>
 
   }
 
-  public startingCapacity(int size)
+  public NoNullArrayList(int StartingCapacity)
   {
+
 
 
 
