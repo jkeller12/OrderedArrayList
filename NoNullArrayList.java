@@ -2,19 +2,15 @@ import java.util.ArrayList;
 
 public class NoNullArrayList<T> extends ArrayList<T>
 {
-  private int size;
   public NoNullArrayList()
   {
     super();
 
   }
 
-  public NoNullArrayList(int StartingCapacity)
+  public NoNullArrayList(int startingCapacity)
   {
-
-
-
-
+    super(startingCapacity);
   }
 
 
