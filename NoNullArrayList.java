@@ -2,20 +2,49 @@ import java.util.ArrayList;
 
 public class NoNullArrayList<T> extends ArrayList<T>
 {
-  private T value;
+  public default( )
+  {
+    super();
 
-  public boolean add()
+  }
+
+  public startingCapacity()
   {
 
   }
 
-  public boolean add(int index)
+
+
+
+
+  public boolean add(T value)
   {
+    if(value == null)
+    {
+      throw new IllegalArgumentException("Null was added");
+    }
+    super.add(value);
 
   }
 
-  public value set(index, value)
+  public boolean add(int index, T value)
   {
+    if(value == null)
+    {
+      throw new IllegalArgumentException("Null was added");
+    }
+    super.add(index, value);
+
+
+  }
+
+  public T set(int index, T value)
+  {
+    if(value == null)
+    {
+      throw new IllegalArgumentException("Null was added");
+    }
+    super.set(index, value);
 
   }
 
