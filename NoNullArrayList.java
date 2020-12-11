@@ -2,14 +2,17 @@ import java.util.ArrayList;
 
 public class NoNullArrayList<T> extends ArrayList<T>
 {
-  public default( )
+  private int size;
+  public NoNullArrayList()
   {
     super();
 
   }
 
-  public startingCapacity()
+  public startingCapacity(int size)
   {
+
+
 
   }
 
