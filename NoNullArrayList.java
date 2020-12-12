@@ -24,18 +24,17 @@ public class NoNullArrayList<T> extends ArrayList<T>
       throw new IllegalArgumentException("Null was added");
     }
     super.add(value);
+    return true;
 
   }
 
-  public boolean add(int index, T value)
+  public void add(int index, T value)
   {
     if(value == null)
     {
       throw new IllegalArgumentException("Null was added");
     }
     super.add(index, value);
-
-
   }
 
   public T set(int index, T value)
