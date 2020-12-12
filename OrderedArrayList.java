@@ -44,7 +44,8 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
 
   public T set(int index, T value)
   {
-    super.set(CorrectIndex(value), value);
+    super.remove(index);
+    add(CorrectIndex(value), value);
     return value;
   }
 
