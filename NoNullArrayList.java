@@ -44,7 +44,7 @@ public class NoNullArrayList<T> extends ArrayList<T>
       throw new IllegalArgumentException("Null was added");
     }
     super.set(index, value);
-
+    return value; 
   }
 
 
