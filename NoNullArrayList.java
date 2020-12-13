@@ -39,12 +39,13 @@ public class NoNullArrayList<T> extends ArrayList<T>
 
   public T set(int index, T value)
   {
+
     if(value == null)
     {
       throw new IllegalArgumentException("Null was added");
     }
     super.set(index, value);
-    return value; 
+    return value;
   }
 
 
