@@ -54,7 +54,6 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
       throw new IllegalArgumentException("Null added in set");
     }
     T rem_val = super.get(index);
-
     super.remove(index);
     add(value);
 
