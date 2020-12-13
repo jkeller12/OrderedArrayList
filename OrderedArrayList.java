@@ -12,13 +12,18 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
 
   private int CorrectIndex(T value)
   {
+    if(value == null)
+    {
+      throw new IllegalArgumentException("Null was added");
+    }
     for(int i = 0 ; i < super.size(); i++)
     {
-      if(value.compareTo(super.get(i)) > 0)
+      if(value.compareTo(super.get(i)) < 0)
       {
         return i;
       }
     }
+    
     return super.size();
   }
 
@@ -45,7 +50,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
   public T set(int index, T value)
   {
     super.remove(index);
-    add(CorrectIndex(value), value);
+    super.add(CorrectIndex(value), value);
     return value;
   }
 
