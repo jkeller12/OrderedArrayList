@@ -22,25 +22,32 @@ public class TesterMethods {
 	}
 
 	public static void passMessage(int testCase) {
+		System.out.println("");
+
 		System.out.println("Test case " + testCase + " passed.");
 	}
 
 	public static void passMessage(String testCase) {
+		System.out.println("");
+
 		System.out.println("Test case " + testCase + " passed.");
 	}
 
 	public static void errorMessage(int testCase) {
+		System.out.println("");
+
 		System.out.println("Test case " + testCase + " failed.");
 	}
 
 	public static void errorMessage(String testCase) {
+		System.out.println("");
 		System.out.println("Test case " + testCase + " failed.");
 	}
 
 	public static void errorMessage(String testCase, String expected, String actual) {
 		errorMessage(testCase);
 		System.out.println("Expected: " + expected);
-		System.out.println("Actual:" + actual);
+		System.out.println("Actual:   " + actual);
 	}
 
 	public static void errorMessage(int testCase, String expected, String actual) {

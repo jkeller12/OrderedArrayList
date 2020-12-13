@@ -10,7 +10,7 @@ public class OrderedArrayListTester {
 		failure = nullTester() || failure;
 		failure = addTester(1000) || failure;
 		failure = addAtIndexTester(1000) || failure;
-		failure = failure || setTester(1000);
+		failure = failure || setTester(50);
 
 		TesterMethods.overall(failure);
 	}
@@ -216,6 +216,7 @@ public class OrderedArrayListTester {
 					fail = true;
 					TesterMethods.errorMessage(test, Integer.toString(expectedReturn), Integer.toString(returned));
 				}
+				//expected.remove(index);
 			}
 			//System.out.println(subject.toString());
 		}
